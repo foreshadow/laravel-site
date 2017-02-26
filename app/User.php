@@ -30,4 +30,8 @@ class User extends Authenticatable
     ];
 
     protected $dates = ['deleted_at'];
+
+    function codeforces_user() {
+        return $this->belongsTo('\App\CodeforcesUser', 'codeforcesHandle', 'handle');
+    }
 }

@@ -3,21 +3,21 @@ body {
 }
 
 .full-screen {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
 }
 
 .background {
     @extend .full-screen;
-    z-index: -1; 
+    z-index: -1;
 }
 
 .bing-background {
     @extend .background;
-    background: url(/img/wonders.jpg);
+    background: url("/img/wonders.jpg");
     background-size: cover;
 }
 
@@ -35,7 +35,9 @@ body {
 }
 
 .panel-heading {
-    h4, h5, h6 {
+    h4,
+    h5,
+    h6 {
         margin: {
             top: 3px;
             bottom: 3px;
@@ -46,13 +48,22 @@ body {
 .transparent {
     // opacity: 0.55;
 }
-
 @for $i from 1 through 6 {
-    .toc-#{$i} { 
-        margin-left: 30px * ($i - 1); 
+    .toc-#{$i} {
+        margin-left: 30px * ($i - 1);
     }
 }
 
 .text-white {
     color: white;
+}
+
+.no-margin {
+    * {
+        margin: 0;
+    }
+}
+
+.verdict {
+    font-family: 'verdana';
 }

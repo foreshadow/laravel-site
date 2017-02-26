@@ -7793,7 +7793,7 @@ body {
 }
 
 .bing-background {
-  background: url(/img/wonders.jpg);
+  background: url("/img/wonders.jpg");
   background-size: cover;
 }
 
@@ -7808,7 +7808,9 @@ body {
   margin-bottom: 30px;
 }
 
-.panel-heading h4, .panel-heading h5, .panel-heading h6 {
+.panel-heading h4,
+.panel-heading h5,
+.panel-heading h6 {
   margin-top: 3px;
   margin-bottom: 3px;
 }
@@ -7839,6 +7841,128 @@ body {
 
 .text-white {
   color: white;
+}
+
+.no-margin * {
+  margin: 0;
+}
+
+.verdict {
+  font-family: 'verdana';
+}
+
+/*status.css*/
+.verdict-accepted {
+  color: #0a0;
+  font-weight: bold;
+}
+
+.verdict-accepted-challenged {
+  color: #0a0;
+}
+
+.verdict-failed {
+  color: red;
+}
+
+.verdict-rejected {
+  color: #00a;
+}
+
+.verdict-waiting {
+  color: gray;
+}
+
+.verdict-successful-challenge {
+  font-weight: bold;
+  color: #0a0;
+}
+
+.verdict-unsuccessful-challenge {
+  color: #00a;
+}
+
+.verdict-challenged {
+  color: red;
+  font-weight: bold;
+}
+
+.status-verdict {
+  font-size: 1.1rem !important;
+}
+
+.status-problem {
+  font-size: 1.1rem !important;
+}
+
+.status-small {
+  font-size: 1.1rem !important;
+}
+
+/* commumity.css*/
+.recent-actions {
+  margin: 1em;
+  font-size: 0.9em;
+}
+
+.rated-user {
+  /*font-family: arial;*/
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none !important;
+  font-weight: bold;
+}
+
+.user-black {
+  color: black !important;
+  font-weight: normal !important;
+}
+
+.legendary-user-first-letter {
+  color: black !important;
+}
+
+.user-legendary {
+  color: red !important;
+}
+
+.user-red {
+  color: red !important;
+}
+
+.user-fire {
+  color: red !important;
+}
+
+.user-yellow {
+  color: #bb0 !important;
+}
+
+.user-violet {
+  color: #a0a !important;
+}
+
+.user-orange {
+  color: #FF8C00 !important;
+}
+
+.user-blue {
+  color: blue !important;
+}
+
+.user-cyan {
+  color: #03A89E !important;
+}
+
+.user-green {
+  color: green !important;
+}
+
+.user-gray {
+  color: gray !important;
+}
+
+.user-admin {
+  color: black !important;
 }
 
 /*# sourceMappingURL=app.css.map */

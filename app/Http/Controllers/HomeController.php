@@ -13,7 +13,6 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        
     }
 
     /**
@@ -23,6 +22,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home')->withArticles(\App\Article::all());
+        return view('home')->withArticles(\App\Article::all())
+                           ->with('contests', \App\CodeforcesContest::where('phase', '!=', 'finished')->orderBy('id', 'desc')->get());
     }
 }
